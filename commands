@@ -1,0 +1,5 @@
+installing nest:
+    - npm i -g @nestjs/cli
+
+creating nest project:
+    - nest new <api name>
