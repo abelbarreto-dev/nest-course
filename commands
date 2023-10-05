@@ -3,3 +3,9 @@ installing nest:
 
 creating nest project:
     - nest new <api name>
+
+creating a module:
+    - nest g module <module name>
+
+creating controller:
+    - nest g controller <controller name>
