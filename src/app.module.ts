@@ -3,6 +3,7 @@ import { UserModule } from "./user/user.module";
 import { ConfigModule } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import * as process from "process";
+import { UserEntity } from "./user/userEntity";
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import * as process from "process";
       password: process.env.DB_PASSWORD,
       port: Number(process.env.DB_PORT),
       username: process.env.DB_USERNAME,
+      entities: [UserEntity],
     }),
     UserModule,
   ],

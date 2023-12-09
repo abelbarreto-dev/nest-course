@@ -26,3 +26,5 @@ nestjs-config:
 
 installing type orm
     - npm install --save @nestjs/typeorm typeorm pg
+
+# note - in config typeorm, if synchronize: true, when api ups, it create the database.
