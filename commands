@@ -20,3 +20,9 @@ installing bcrypt:
 docker postgresql:
     - docker pull postgres
     - docker run --name some-postgres -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+nestjs-config:
+    - npm i --save @nestjs/config
+
+installing type orm
+    - npm install --save @nestjs/typeorm typeorm pg
