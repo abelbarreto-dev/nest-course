@@ -9,3 +9,10 @@ creating a module:
 
 creating controller:
     - nest g controller <controller name>
+
+creating service:
+    - nest g service <service name>
+
+installing bcrypt:
+    - npm i bcrypt
+    - npm i -D @types/bcrypt
