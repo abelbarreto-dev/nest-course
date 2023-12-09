@@ -28,3 +28,7 @@ installing type orm
     - npm install --save @nestjs/typeorm typeorm pg
 
 # note - in config typeorm, if synchronize: true, when api ups, it create the database.
+
+make migration:
+    - npx typeorm migration:create ./src/migrations/create_table_user
+    - npx typeorm migration:generate -d <path/to/datasource> path/to/migrations/<migration-name>
