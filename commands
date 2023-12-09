@@ -16,3 +16,7 @@ creating service:
 installing bcrypt:
     - npm i bcrypt
     - npm i -D @types/bcrypt
+
+docker postgresql:
+    - docker pull postgres
+    - docker run --name some-postgres -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
